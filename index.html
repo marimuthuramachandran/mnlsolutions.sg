@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+			<form id="contactForm" method="post" action="https://script.google.com/macros/s/AKfycbyKxrR2_e0FhBAMDyK6bIOQPP52shqknds49-YqkqF-PdhVaoHtvmqo_y7U80JRV6Yohg/exec" name="contact-form">
+			<img id="mnl" src="logo.png" alt="">
+			<br>
+			<h4>MNL Daily Progress Update</h4>
+			<h9>Name:<h9/>	
+			<input type="text" name="Name" placeholder="Enter Name">
+			<h9>Company Name:<h9/>	
+			<input type="text" name="Company" placeholder="Enter Company">
+			<h9>Site Name:<h9/>	
+			<input type="text" name="Site Name" placeholder="Enter Site Name">
+ 			<h9>Date:<h9/>	
+			<input type="date" name="Date:" placeholder="Enter Date">
+			<h9>Time In:<h9/>	
+ 			<input type="time" name="Time In" placeholder="Enter Time In">
+			<h9>Time Out:<h9/>	
+			<input type="time" name="Time Out" placeholder="Enter Time Out">
+			<input type="submit" value="Submit" id="submit">
+		</form>
+	<div id="successPopup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3>Success!</h3>
+            <p>Your message has been sent.</p>
+        </div>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
