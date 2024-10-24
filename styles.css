@@ -6,8 +6,6 @@
 	font-size: 18px;
 }
 body{
-	display: flex;
-	align-items: center;
 	padding: 30px;
 	background-color: #003b5b;
 }
