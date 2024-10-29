@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-			<form id="contactForm" method="post" action="https://script.google.com/macros/s/AKfycbyKxrR2_e0FhBAMDyK6bIOQPP52shqknds49-YqkqF-PdhVaoHtvmqo_y7U80JRV6Yohg/exec" name="contact-form">
-			<img id="mnl" src="logo.png" alt="">
-			<br>
-			<h4>MNL Daily Progress Update</h4>
-			<h9>Name:<h9/>	
-			<input type="text" name="Name" placeholder="Enter Name">
-			<h9>Company Name:<h9/>	
-			<input type="text" name="Company" placeholder="Enter Company">
-			<h9>Site Name:<h9/>	
-			<input type="text" name="Site Name" placeholder="Enter Site Name">
- 			<h9>Date:<h9/>	
-			<input type="date" name="Date:" placeholder="Enter Date">
-			<h9>Time In:<h9/>	
- 			<input type="time" name="Time In" placeholder="Enter Time In">
-			<h9>Time Out:<h9/>	
-			<input type="time" name="Time Out" placeholder="Enter Time Out">
-			<input type="submit" value="Submit" id="submit">
-		</form>
-	<div id="successPopup" class="popup hidden">
+    <h1>MNL DAILY PROGRESS UPDATE</h1>
+    <form id="contactForm" action="https://script.google.com/macros/s/AKfycbyKxrR2_e0FhBAMDyK6bIOQPP52shqknds49-YqkqF-PdhVaoHtvmqo_y7U80JRV6Yohg/exec" method="post" name="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" required>
+
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="Company" required>
+
+        <label for="Site">Site Name:</label>
+        <input type="text" id="site" name="Site Name" required>
+
+        <label for="date_a">Date:</label>
+        <input type="date" id="date_a" name="Date" required>
+
+        <label for="time_a">Time In:</label>
+        <input type="time" id="time_a" name="Time In" required>
+        
+        <label for="time_b">Time Out:</label>
+        <input type="time" id="time_b" name="Time Out" required>
+
+        <button type="submit">Send Message</button>
+    </form>
+    <div id="successPopup" class="popup hidden">
         <div class="popup-content">
             <span class="close-btn">&times;</span>
             <h3>Success!</h3>
-            <p>Your message has been sent.</p>
+            <p>Your report has submitted.</p>
         </div>
     </div>
-	<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
